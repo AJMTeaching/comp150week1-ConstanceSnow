@@ -7,14 +7,15 @@
 my_list = [1, 5, 'apple', 20.5]
 
 #2. Using indexing, print the value 'apple' from my_list.
-if 'apple' in lst:
-          return lst.index('apple')
+print(my_list[2])
+# if 'apple' in my_list:
+#     print(lst.index('apple'))
 #3. Add the value 10 to the end of my_list using the append() method. Print the updated list.
 my_list.append(10)
 print(my_list)
 
 #4. Remove the value 20.5 from my_list using the remove() method. Print the updated list.
-lst.pop(20.5)
+my_list.remove(20.5)
 print(my_list)
 
 #5. Reverse the order of the elements in my_list using a method. Print the reversed list.
@@ -39,7 +40,7 @@ person.pop('age')
 print(person)
 
 #5. Iterate through the person dictionary and print out each key-value pair on a separate line.
-    for key, value in person.items():
+for key, value in person.items():
     print(f"Key: {key}, Value: {value}")
 # -----------------------------------------------------------------------------
 
@@ -59,7 +60,7 @@ def test(did_pass):
 
 # Function 1: count_vowels
 def count_vowels(s: str) -> int:
-    vowel_list = ['a', 'e', 'i', 'o', 'u']
+    vowel_list = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
     x = 0
     for letter in s:
         if letter in vowel_list:
@@ -107,7 +108,9 @@ def merge_lists(list1: list, list2: list) -> list:
     # Create through the list of strings.
     # Compute and append the length of each string.
     # Return the list of lengths.
-    
+
+
+
     """
     Merge two sorted lists into a single sorted list.
 
@@ -141,28 +144,20 @@ def test_merge_lists():
 # Function 3: word_lengths
 def word_lengths(words: list) -> list:
    lengths = []
-   for string in words
+   for string in words:
         length = len(string)
         lengths.append(length)
-    return lengths
+        return lengths
      
    
-    """
-    Get the lengths of words in a list.
-
-    Parameters:
-    - words (list): The list of words
-
-    Returns:
-    - list: A list containing the lengths of the words
-    """
+   
     # TODO: Implement this function
     
 
 
 # Unit Tests for word_lengths
 def test_word_lengths():
-    words = ["hello", "world", "python"]
+    words = (["short", "mediummm", "longesttttt"])
     lengths = word_lengths(words)
     
     
@@ -218,6 +213,7 @@ def intersection(list1: list, list2: list) -> list:
         if item in list2 and item not in intersection:
             intersection.append(item)
     return intersection
+ 
  # To create a nested loop 
  # identify list
  # Create empty intersection list
@@ -232,7 +228,7 @@ def intersection(list1: list, list2: list) -> list:
 
     Returns:
     - list: The intersection of the two lists
-    """
+"""
     # TODO: Implement this function
     
 
